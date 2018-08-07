@@ -63,9 +63,6 @@ module.exports = function override(config, env) {
           // ident: 'postcss',
           plugins: () => [
             require('postcss-flexbugs-fixes'),
-            autoprefixer({
-              flexbox: 'no-2009',
-            }),
             require('postcss-aspect-ratio-mini'),
             require('postcss-px-to-viewport')({
               viewportWidth: 750, // (Number) The width of the viewport.
